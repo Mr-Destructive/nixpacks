@@ -68,10 +68,10 @@ impl Builder for DockerBuilder {
             self.logger.log_section("Successfully Built!");
 
             println!("\nRun:");
-            println!("  docker run -it {}", name);
+            println!("docker run -it {}", name);
         } else {
             println!("\nSaved output to:");
-            println!("  {}", dest);
+            println!("{}", dest);
         }
 
         Ok(())
